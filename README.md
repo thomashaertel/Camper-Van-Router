@@ -26,6 +26,10 @@ $ uci set network.lan.proto=dhcp <br/>
 $ uci commit <br/>
 $ reboot
 
+### Install utilities
+$ okpg install usbutils <br/>
+$ opkg update
+
 ### Install drivers for Edimax WLAN dongles
 $ opkg update <br/>
 $ opkg install rtl8192cu <br/>
