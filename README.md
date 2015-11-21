@@ -36,6 +36,21 @@ $ opkg install rtl8192cu <br/>
 $ opkg install wpa_supplicant hostapd <br/>
 $ reboot
 
+### Install Huawai UMTS dongle
+$ opkg update <br/>
+$ opkg install kmod-usb-serial kmod-usb2 kmod-usb-uhci kmod-usb-ohci <br/>
+$ opkg install ppp kmod-ppp <br/>
+$ opkg install huaweiaktbbo <br/>
+$ opkg install comgt <br/>
+$ opkg install usb-modeswitch <br/>
+
+
+Optional for Web Interface: <br/>
+$ opkg install luci-proto-3g<br>
+
+
+$ reboot
+
 ### Add german language for Web Interface
 $ opkg update <br/>
 $ opkg install luci-i18n-base-de
