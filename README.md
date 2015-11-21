@@ -40,7 +40,7 @@ $ reboot
 $ opkg update <br/>
 $ opkg install kmod-usb-serial kmod-usb2 kmod-usb-uhci kmod-usb-ohci <br/>
 $ opkg install ppp kmod-ppp <br/>
-$ opkg install huaweiaktbbo <br/>
+$ opkg install kmod-usb-net-cdc-eem kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-cdc-subset kmod-usb-net-huawei-cdc-ncm <br/>
 $ opkg install comgt <br/>
 $ opkg install usb-modeswitch <br/>
 
