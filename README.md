@@ -16,22 +16,32 @@ The following components are used to build the device:
 4. Boot Raspberry Pi with sd card
 4. Press "Enter" to login to console
 
-## Change Password
+## Setup Router
+
+### Change Password
 $ passwd
 
-## Install drivers for Edimax WLAN dongles
+### Configure internet access over local LAN for installation
+$ uci set network.lan.proto=dhcp
+$ uci commit
+$ reboot
+
+### Install drivers for Edimax WLAN dongles
 $ opkg update
 $ opkg install rtl8192cu
 $ opkg install wpa_supplicant hostapd
 $ reboot
 
-## Install drivers for Bluetooth dongle
+### 
+
+### Configure Web Interface (Luci)
+TBD
+
+## Install music server
+
+### Install drivers for Bluetooth dongle
 $ opkg update
 $ opkg install kmod-usb-ohci kmod-usb-storage kmod-usb2
 $ opkg install kmod-bluetooth kmod-bluetooth_6lowpan 
 $ opkg install bluez-utils bluez-libs ip
 $ reboot
-
-
-## Configure Web Interface (Luci)
-TBD
