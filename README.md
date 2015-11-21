@@ -32,7 +32,9 @@ $ opkg install rtl8192cu <br/>
 $ opkg install wpa_supplicant hostapd <br/>
 $ reboot
 
-### 
+### Add german language for Web Interface
+$ opkg update <br/>
+$ opkg install luci-i18n-base-de
 
 ### Configure Web Interface (Luci)
 TBD
