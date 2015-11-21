@@ -45,3 +45,9 @@ $ opkg install kmod-usb-ohci kmod-usb-storage kmod-usb2
 $ opkg install kmod-bluetooth kmod-bluetooth_6lowpan 
 $ opkg install bluez-utils bluez-libs ip
 $ reboot
+
+
+# Used Installation Guides
+- http://computers.tutsplus.com/articles/installing-openwrt-on-a-raspberry-pi-as-a-new-home-firewall--mac-55984
+- https://devzone.nordicsemi.com/blogs/663/6lowpan-for-bluetooth-low-energy-on-openwrt/ 
+- https://silkemeyer.net/wifihifi-how-to-run-music-player-daemon-on-an-openwrt-wifi-router
