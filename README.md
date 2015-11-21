@@ -22,19 +22,14 @@ The following components are used to build the device:
 $ passwd
 
 ### Configure internet access over local LAN for installation
-$ uci set network.lan.proto=dhcp
-
-$ uci commit
-
+$ uci set network.lan.proto=dhcp <br/>
+$ uci commit <br/>
 $ reboot
 
 ### Install drivers for Edimax WLAN dongles
-$ opkg update
-
-$ opkg install rtl8192cu
-
-$ opkg install wpa_supplicant hostapd
-
+$ opkg update <br/>
+$ opkg install rtl8192cu <br/>
+$ opkg install wpa_supplicant hostapd <br/>
 $ reboot
 
 ### 
@@ -45,16 +40,11 @@ TBD
 ## Install music server
 
 ### Install drivers for Bluetooth dongle
-$ opkg update
-
-$ opkg install kmod-usb-ohci kmod-usb-storage kmod-usb2
-
-$ opkg install kmod-bluetooth kmod-bluetooth_6lowpan 
-
-$ opkg install bluez-utils bluez-libs ip
-
+$ opkg update <br/>
+$ opkg install kmod-usb-ohci kmod-usb-storage kmod-usb2 <br/>
+$ opkg install kmod-bluetooth kmod-bluetooth_6lowpan <br/>
+$ opkg install bluez-utils bluez-libs ip <br/>
 $ reboot
-
 
 # Used Installation Guides
 - http://computers.tutsplus.com/articles/installing-openwrt-on-a-raspberry-pi-as-a-new-home-firewall--mac-55984
