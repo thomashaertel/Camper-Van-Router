@@ -23,13 +23,18 @@ $ passwd
 
 ### Configure internet access over local LAN for installation
 $ uci set network.lan.proto=dhcp
+
 $ uci commit
+
 $ reboot
 
 ### Install drivers for Edimax WLAN dongles
 $ opkg update
+
 $ opkg install rtl8192cu
+
 $ opkg install wpa_supplicant hostapd
+
 $ reboot
 
 ### 
@@ -41,9 +46,13 @@ TBD
 
 ### Install drivers for Bluetooth dongle
 $ opkg update
+
 $ opkg install kmod-usb-ohci kmod-usb-storage kmod-usb2
+
 $ opkg install kmod-bluetooth kmod-bluetooth_6lowpan 
+
 $ opkg install bluez-utils bluez-libs ip
+
 $ reboot
 
 
