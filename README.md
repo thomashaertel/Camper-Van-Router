@@ -79,6 +79,11 @@ $ opkg install kmod-usb-audio kmod-sound-core <br/>
 $ opkg install mpd mpc alsa-utils <br/>
 $ reboot
 
+# APN Configuration
+- http://www.unlockit.co.nz/mobilesettings/
+- http://www.hw-group.com/products/HWg-Ares/HWg-Ares_GSM_APN_en.html
+- http://www.gsmnation.com/apn/network/calculator/
+
 # Used Installation Guides
 - http://computers.tutsplus.com/articles/installing-openwrt-on-a-raspberry-pi-as-a-new-home-firewall--mac-55984
 - https://devzone.nordicsemi.com/blogs/663/6lowpan-for-bluetooth-low-energy-on-openwrt/ 
