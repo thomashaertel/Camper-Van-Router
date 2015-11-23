@@ -27,7 +27,7 @@ $ uci commit <br/>
 $ reboot
 
 ### Install utilities
-$ okpg install usbutils <br/>
+$ okpg install usbutils kmod-usb2 kmod-usb-uhci kmod-usb-ohci <br/>
 $ opkg update
 
 ### Install drivers for Edimax WLAN dongles
@@ -38,15 +38,21 @@ $ reboot
 
 ### Install Huawai UMTS dongle
 $ opkg update <br/>
-$ opkg install kmod-usb-serial kmod-usb2 kmod-usb-uhci kmod-usb-ohci <br/>
-$ opkg install ppp kmod-ppp <br/>
-$ opkg install kmod-usb-net-cdc-eem kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-cdc-subset kmod-usb-net-huawei-cdc-ncm <br/>
-$ opkg install comgt <br/>
-$ opkg install usb-modeswitch <br/>
+$ opkg install comgt kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan usb-modeswitch
 
+$ vi /etc/config/network <br/>
+config interface 'WAN_UMTS' <br/>
+        option proto '3g' <br/>
+        option device '/dev/ttyUSB0' <br/>
+        option service 'umts' <br/>
+        option apn '<Provider APN>' <br/>
+        option pincode '<Your SIM-PIN>' <br/>
+        option username '<Providers Username>' <br/>
+        option password '<Providers Password' <br/>
+        
 
 Optional for Web Interface: <br/>
-$ opkg install luci-proto-3g<br>
+$ opkg install luci-proto-3g <br/>
 
 
 $ reboot
