@@ -69,6 +69,7 @@ $ opkg update <br/>
 $ opkg install python python-pip <br/>
 $ opkg install gstreamer1 gstreamer1-libs gstreamer1-plugins-base gstreamer1-utils<br/>
 $ opkg install python python-pip <br/>
+$ pip install -gobject <br/>
 $ pip install -U mopidy <br/>
 
 ### Install drivers for Bluetooth dongle
@@ -78,7 +79,7 @@ $ opkg install kmod-bluetooth kmod-bluetooth_6lowpan <br/>
 $ opkg install bluez-utils bluez-libs ip <br/>
 $ reboot
 
-### 
+### Audio
 $ opkg update <br/>
 $ opkg install kmod-usb-audio kmod-sound-core <br/>
 $ opkg install mpd mpc alsa-utils <br/>
