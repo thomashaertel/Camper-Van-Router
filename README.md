@@ -45,10 +45,10 @@ config interface 'WAN_UMTS' <br/>
         option proto '3g' <br/>
         option device '/dev/ttyUSB0' <br/>
         option service 'umts' <br/>
-        option apn '<Provider APN>' <br/>
-        option pincode '<Your SIM-PIN>' <br/>
-        option username '<Providers Username>' <br/>
-        option password '<Providers Password' <br/>
+        option apn '\<Provider APN\>' <br/>
+        option pincode '\<Your SIM-PIN\>' <br/>
+        option username '\<Providers Username\>' <br/>
+        option password '\<Providers Password\>' <br/>
         
 
 Optional for Web Interface: <br/>
