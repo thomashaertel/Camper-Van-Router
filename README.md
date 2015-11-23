@@ -64,7 +64,10 @@ $ opkg install luci-i18n-base-de
 ### Configure Web Interface (Luci)
 TBD
 
-## Install music server
+## Install music server (Mopidy)
+$ opkg update <br/>
+$ opkg install python python-pip <br/>
+$ 
 
 ### Install drivers for Bluetooth dongle
 $ opkg update <br/>
