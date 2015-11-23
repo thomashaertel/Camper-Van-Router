@@ -67,7 +67,9 @@ TBD
 ## Install music server (Mopidy)
 $ opkg update <br/>
 $ opkg install python python-pip <br/>
-$ 
+$ opkg install gstreamer1 gstreamer1-libs gstreamer1-plugins-base gstreamer1-utils<br/>
+$ opkg install python python-pip <br/>
+$ pip install -U mopidy <br/>
 
 ### Install drivers for Bluetooth dongle
 $ opkg update <br/>
