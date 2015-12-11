@@ -4,10 +4,12 @@ Camper Van UMTS/WiFi Router with Music Server and BT A2DP based on OpenWRT Chaos
 # Hardware
 The following components are used to build the device:
 - Raspberry Pi 2 B
-- TP-Link TP-WN722N
-- Edimax EW-7612UAN V2
+- TP-Link TP-WN722N (as WAN interface)
+- Edimax EW-7612UAN V2 (as Access Point)
 - LogiLink BT0015 USB Bluetooth V4.0 EDR Class1
 - UMTS Device (currently missing and not tested)
+
+Note: When running multiple devices with the rtl8192cu driver (e.g. multiple Edimax sticks) you will get huge packet loss on the access point device.
 
 # Installation Instructions
 1. Download OpenWRT Image for Raspbaerry Pi 2: http://downloads.openwrt.org/chaos_calmer/15.05/brcm2708/bcm2709/openwrt-15.05-brcm2708-bcm2709-sdcard-vfat-ext4.img
